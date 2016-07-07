@@ -1,7 +1,8 @@
 body {
 			background-color: black;
 			margin: 0;
-			font-family: 'Open Sans', sans-serif;
+			font-family: "proxima-nova", sans-serif;
+			font-weight: bold;
 		}
 		#header {
 			background-image: url('img/Sunset1.JPG');
@@ -26,14 +27,15 @@ body {
 		}
 		#enter {
 			position: absolute;
-			top: 50%;
+			top: 48%;
 			width: 100%;
 			text-align: center;
-			font-size: 1.5rem;
+			font-size: 1.65rem;
+			letter-spacing: 5px;
 		}
 		#arrow {
 			position: absolute;
-			top: 85%;
+			top: 90%;
 			width: 100%;
 			text-align: center;
 		}
@@ -44,5 +46,11 @@ body {
 			border-style: solid; 
 			border-width: 2px; 
 			border-radius: 2px; 
-			padding: 20px;
+			padding: 7px 20px;
+		}
+		#button2 {
+			border-style: solid; 
+			border-width: 2px; 
+			border-radius: 200px; 
+			padding: 17px 13px;
 		}
