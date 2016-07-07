@@ -43,6 +43,7 @@ body {
 			height: 100%;
 			padding: 0;
 			margin: 0;
+			position: relative;
 		}
 		#button1 {
 			border-style: solid; 
@@ -60,9 +61,16 @@ body {
 			background-color: rgba(150,150,150,0.3);
 		}
 		#footer {
-			height: 10%;
-			color: white;
+			height: 60px;
+			background-color: rgba(30,30,30,1);
 			position: relative;
-			padding: 0;
-			margin: 0;
+			padding: 0% 6%;
+			margin: 0%;
+		}
+		#footer p {
+			color: black;
+			display: table-cell; 
+			height: 60px; 
+			padding: 0 20px; 
+			vertical-align: middle;
 		}
