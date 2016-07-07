@@ -1,23 +1,93 @@
 <html>
 <head>
-	<style type="text/css">
+	<title>NES Photography</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<!-- <style type="text/css">
 		body {
 			background-color: black;
 			margin: 0;
+			font-family: 'Open Sans', sans-serif;
 		}
 		#header {
 			background-image: url('img/Sunset1.JPG');
 			background-position: center;
 			background-size: cover;
 			height: 100%;
+			color: #cccccc;
 		}
-	</style>
+		#blur {
+			background-image: url('img/Sunset1blur.JPG');
+			background-position: center;
+			background-size: cover;
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			top: 0;
+			opacity: 0;
+		}
+		body a {
+			color: #cccccc;
+            text-decoration: inherit;
+		}
+		#enter {
+			position: absolute;
+			top: 50%;
+			width: 100%;
+			text-align: center;
+			font-size: 1.5rem;
+		}
+		#arrow {
+			position: absolute;
+			top: 85%;
+			width: 100%;
+			text-align: center;
+		}
+		#maindiv {
+			height: 100%;
+		}
+		#button1 {
+			border-style: solid; 
+			border-width: 2px; 
+			border-radius: 2px; 
+			padding: 20px;
+		}
+	</style> -->
 </head>
 <body>
-	<div id="header">
-		<div></div>
+	<div id="header"></div>
+	<div id ="blur"></div>
+	<div id = "enter">
+		<a href="#maindiv" id = "button1" class="link">NES PHOTOGRAPHY</a>
+	</div>
+	<div id = "arrow">
+		<a href="#maindiv" class="link">
+			<img src="img/down-arrow.png" id= "button1" style="width: 20px; height: auto;">
+		</a>
 	</div>
 	<div id = "maindiv">
 	</div>
+	<script>
+//------------------ Smooth Scroll on click ------------------------------
+     	$(function() {
+            $('.link').click(function() {
+                var id = $(this).attr('href');
+                $('html,body').animate({
+                    scrollTop: $(id).offset().top
+                }, 'slow');
+                // Prevent default behavior of link
+                return false;
+            });
+        });
+
+        $(window).scroll(function() {
+    // Get scroll position
+    var s = $(window).scrollTop(),
+    // scroll value and opacity
+    opacityVal = (s / ($(window).height()/4));
+    // opacity value 0% to 100%
+    $('#blur').css('opacity', opacityVal);
+});
+    </script>
 </body>
 </html>
