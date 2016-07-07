@@ -12,7 +12,7 @@
 	</div>
 	<div id = "arrow">
 		<a href="#maindiv" class="link">
-			<img src="img/down-arrow.png" id= "button2" style="width: 20px; height: auto;">
+			<img src="img/down-arrow-dark.png" id= "button2" style="width: 20px; height: auto;">
 		</a>
 	</div>
 	<div id = "maindiv">
@@ -37,6 +37,14 @@
     opacityVal = (s / ($(window).height()/4));
     // opacity value 0% to 100%
     $('#blur').css('opacity', opacityVal);
+});
+         $(window).scroll(function() {
+    // Get scroll position
+    var s = $(window).scrollTop(),
+    // scroll value and opacity
+    opacityVal = (70 * 1/((s/1)+1));
+    // opacity value 0% to 100%
+    $('#arrow').css('opacity', opacityVal);
 });
     </script>
 </body>

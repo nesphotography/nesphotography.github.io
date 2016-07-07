@@ -6,10 +6,10 @@ body {
 		}
 		#header {
 			background-image: url('img/Sunset1.JPG');
-			background-position: center;
 			background-size: cover;
+			background-position: center;
 			height: 100%;
-			color: #cccccc;
+			color: #ffffff;
 		}
 		#blur {
 			background-image: url('img/Sunset1blur.jpg');
@@ -22,7 +22,7 @@ body {
 			opacity: 0;
 		}
 		body a {
-			color: #cccccc;
+			color: #000000;
             text-decoration: inherit;
 		}
 		#enter {
