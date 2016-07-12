@@ -62,13 +62,14 @@ body {
 		}
 		#footer {
 			height: 60px;
-			background-color: rgba(30,30,30,1);
+			background-color: rgba(60,60,60,1);
 			position: relative;
 			padding: 0% 6%;
 			margin: 0%;
 		}
 		#footer p {
-			color: black;
+			color: rgba(150,150,150,1);
+			font-weight: normal;
 			display: table-cell; 
 			height: 60px; 
 			padding: 0 20px; 

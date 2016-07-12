@@ -23,7 +23,8 @@
     </div>
 	<script>
 //------------------ Smooth Scroll on click ------------------------------
-     	$(function() {
+  	
+    $(function() {
             $('.link').click(function() {
                 var id = $(this).attr('href');
                 $('html,body').animate({
@@ -46,10 +47,11 @@
     // Get scroll position
     var s = $(window).scrollTop(),
     // scroll value and opacity
-    opacityVal = (70 * 1/((s/1)+1));
+    opacityVal2 = (70 * 1/((s/1)+1));
     // opacity value 0% to 100%
-    $('#arrow').css('opacity', opacityVal);
+    $('#arrow').css('opacity', opacityVal2);
 });
+
     </script>
 </body>
 </html>
