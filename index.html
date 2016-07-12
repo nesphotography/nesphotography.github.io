@@ -5,6 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="css.css">
 </head>
 <body>
+<div id = "wrapper">
 	<div id="header"></div>
 	<div id ="blur"></div>
 	<div id = "enter">
@@ -15,12 +16,89 @@
 			<img src="img/down-arrow-dark.png" id= "button2" style="width: 20px; height: auto;">
 		</a>
 	</div>
+    <div class="nav">
+        <a href="#maindiv" id = "button1" class="link">NES PHOTOGRAPHY</a>
+    </div>
 	<div id = "maindiv">
-
+        <div id="wrap">
+            <div class="wide_col">            
+                <img src="img/photography/landscape/1.JPG">
+                <div class="medium_img">
+                    <img src="img/photography/portrait/1.JPG" alt="">
+                    <img src="img/photography/landscape/2.JPG" alt="">
+                </div>
+                <div class="small_img">
+                    <img src="img/photography/portrait/2.JPG" alt="">
+                    <img src="img/photography/portrait/3.JPG" alt="">
+                </div>
+                <img src="img/photography/landscape/13.JPG">
+                <div class="medium_img">
+                    <img src="img/photography/portrait/10.JPG" alt="">
+                    <img src="img/photography/landscape/14.JPG" alt="">
+                    <img src="img/photography/landscape/15.JPG" alt="">
+                </div>
+                <img src="img/photography/landscape/16.JPG">
+                <div class="medium_img">
+                    <img src="img/photography/portrait/11.JPG" alt="">
+                    <img src="img/photography/portrait/12.JPG" alt="">
+                </div>
+                <img src="img/photography/landscape/17.JPG">
+                <div class="medium_img">
+                    <img src="img/photography/portrait/13.JPG" alt="">
+                    <img src="img/photography/landscape/18.JPG" alt="">
+                </div>
+                <div class="small_img">
+                    <img src="img/photography/portrait/14.JPG" alt="">
+                    <img src="img/photography/portrait/15.JPG" alt="">
+                </div>
+                <img src="img/photography/landscape/22.JPG">
+                <div class="medium_img">
+                    <img src="img/photography/landscape/14.JPG" alt="">
+                    <img src="img/photography/landscape/3.JPG" alt="">
+                </div>
+            </div>
+            <div class="wide_col">
+                <div class="medium_img">
+                    <img src="img/photography/portrait/4.JPG" alt="">
+                    <img src="img/photography/landscape/4.JPG" alt="">
+                    <img src="img/photography/landscape/9.JPG" alt="">
+                </div>
+                <img src="img/photography/landscape/8.JPG">
+                <div class="medium_img">
+                    <img src="img/photography/portrait/5.JPG" alt="">
+                    <img src="img/photography/portrait/6.JPG" alt="">
+                </div>
+                <img src="img/photography/landscape/10.JPG">
+                <div class="medium_img">
+                    <img src="img/photography/portrait/7.JPG" alt="">
+                    <img src="img/photography/landscape/11.JPG" alt="">
+                </div>
+                <div class="small_img">
+                    <img src="img/photography/portrait/8.JPG" alt="">
+                    <img src="img/photography/portrait/9.JPG" alt="">
+                </div>
+                <img src="img/photography/landscape/12.JPG">
+                <div class="medium_img">
+                    <img src="img/photography/portrait/16.JPG" alt="">
+                    <img src="img/photography/landscape/19.JPG" alt="">
+                    <img src="img/photography/landscape/20.JPG" alt="">
+                </div>
+                <img src="img/photography/landscape/21.JPG">
+                <div class="medium_img">
+                    <img src="img/photography/landscape/23.JPG" alt="">
+                    <img src="img/photography/landscape/24.JPG" alt="">
+                </div>
+                <div class="medium_img">
+                    <img src="img/photography/portrait/17.JPG" alt="">
+                    <img src="img/photography/portrait/18.JPG" alt="">
+                </div>
+            </div>
+        </div>
 	</div>
     <div id = "footer">
         <p style="vertical-align: middle;">&copy; 2016 NES Photography | All rights reserved</p>
     </div>
+</div>
 	<script>
 //------------------ Smooth Scroll on click ------------------------------
   	
@@ -34,7 +112,7 @@
                 return false;
             });
         });
-
+//-----------------------------blur-------------------------
         $(window).scroll(function() {
     // Get scroll position
     var s = $(window).scrollTop(),
@@ -43,6 +121,7 @@
     // opacity value 0% to 100%
     $('#blur').css('opacity', opacityVal);
 });
+//-----------------------------arrow opacity --------------------------
          $(window).scroll(function() {
     // Get scroll position
     var s = $(window).scrollTop(),
@@ -50,6 +129,18 @@
     opacityVal2 = (70 * 1/((s/1)+1));
     // opacity value 0% to 100%
     $('#arrow').css('opacity', opacityVal2);
+});
+//--------------------------- sticky nav -----------------------------
+         var  mn = $(".nav");
+    ns = "nav-scrolled";
+    wh = $(window).height();
+
+$(window).scroll(function() {
+  if( $(this).scrollTop() > 900 ) {
+    mn.addClass(ns);
+  } else {
+    mn.removeClass(ns);
+  }
 });
 
     </script>
