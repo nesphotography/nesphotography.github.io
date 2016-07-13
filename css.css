@@ -261,6 +261,10 @@
 		    float:left;
 		    visibility: hidden;
 		}
+		/* #wrap img:hover {
+			filter:blur(5px);
+			-webkit-filter:blur(2px);
+		} */
 		.wide_col {
 			width:50%;
 			float: left;
