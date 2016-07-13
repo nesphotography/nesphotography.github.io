@@ -1,8 +1,11 @@
-body {
+		body {
 			background-color: rgb(40,40,40);
 			margin: 0;
 			font-family: "proxima-nova", sans-serif;
 			font-weight: bold;
+		}
+		html, body {
+   			height: 100%;
 		}
 		#header {
 			background-image: url('img/Sunset1.JPG');
@@ -100,6 +103,7 @@ body {
 		    padding: .5%;
 		    border:none;
 		    float:left;
+		    visibility: hidden;
 		}
 		.wide_col {
 			width:50%;
