@@ -1,6 +1,7 @@
 <html>
 <head>
 	<title>NES Photography</title>
+    <link rel="icon" href="n5.png">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.2.0/scrollreveal.min.js"></script>
         <script>
@@ -16,20 +17,56 @@
             <img src="img/loading.gif">
         </div>
     </div>
+    <video autoplay loop muted poster="img/Sunset1.JPG" id="bgvid">
+        <source src="vid/ninsvideo.mp4" type="video/mp4">
+    </video>
 	<div id="header"></div>
-	<div id ="blur"></div>
+	<!--<div id ="blur"></div>-->
 	<div id = "enter">
-		<a href="#maindiv" id = "button1" class="link">NES PHOTOGRAPHY</a>
+		<a href="#firstScroll" id = "button1" class="link">NES PHOTOGRAPHY</a>
 	</div>
 	<div id = "arrow">
-		<a href="#maindiv" class="link">
+		<a href="#firstScroll" class="link">
 			<img src="img/down-arrow-dark.png" id= "button2" style="width: 20px; height: auto;">
 		</a>
 	</div>
-    <!--<div class="nav">
-        <a href="#maindiv" id = "button1" class="link">NES PHOTOGRAPHY</a>
-    </div> -->
-	<div id = "maindiv">
+    <div id ="firstScroll" style="text-align: center; background-color: rgba(60, 60, 60, 1); top:100%;">
+        <div style="padding: 40 10 10 10;">
+            <a href="#firstScroll" id = "button3" class="link">NES PHOTOGRAPHY</a>
+        </div>
+    </div>
+    <div class="nav">
+        <hr style="width:60%; color:black;">
+        <ul id="navigation">
+            <li>
+                <a href="#firstScroll"  id="delete1" class="link" data-link="first" id="space">About</a>
+            </li>
+            <li>
+                <a href="#firstScroll"  id="delete2" class="link" data-link="second" id="space">Contact</a>
+            </li>
+            <li>
+                <a href="#portfolio" id="delete3" class="link" id="space" data-link="third">Photography</a>
+            </li>
+            <!--<li>
+                <a href="#portfolio2" id="delete4" class="link" id="space" data-link="fourth">Videography</a>
+            </li>-->
+        </ul>
+        <hr style="width:50%;">
+    </div>
+    <div id = "contentScroll" style="height: 100px; margin-top: -100px;">
+    </div>
+    <div id="content">
+            <div class="linkdetails" data-link="first" >
+                <!-- <div id ="firstScroll" style="text-align: center; background-color: rgba(60, 60, 60, 1);">
+                    <div style="padding: 40 10 10 10;">
+                        <a href="#firstScroll" id = "button3" class="link">NES PHOTOGRAPHY</a>
+                    </div>
+                </div> -->
+                content 1 placeholder 
+            </div>
+            <div class="linkdetails" data-link="second" >content 2 placeholder</div>
+    </div>
+	<div id = "portfolio"  class="linkdetails" data-link="third">
         <div id="wrap" class="pics">
             <div class="wide_col">            
                 <a href="img/photography/landscape/1.JPG" data-lightbox="all"><img src="img/photography/landscape/1w.jpg" class="shot" ></a>
@@ -105,6 +142,30 @@
             </div>
         </div>
 	</div>
+    <div id = "portfolio2" class="linkdetails" data-link="fourth">
+        <div id="wrap" class="pics">
+            <div class="wide_col">            
+                <video id="video1" width="99%" controls class="shot">
+                    <source src="vid/ninavideo1.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+                <video id="video1" width="100%" controls class="shot">
+                    <source src="vid/ninsvideo.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+            </div>
+            <div class="wide_col">
+                <video id="video1" width="100%" controls class="shot">
+                    <source src="vid/ninavideo2.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+                <video id="video1" width="100%" controls class="shot">
+                    <source src="vid/sun.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+            </div>
+        </div>
+    </div>
     <div id = "footer">
         <p style="vertical-align: middle;">&copy; 2016 NES Photography | All rights reserved</p>
     </div>
@@ -123,6 +184,32 @@
                 return false;
             });
         });
+//---------------------------------- container div content switch -----------------------
+
+$('.linkdetails').hide();
+$('.linkdetails[data-link=first]').fadeIn({
+        width: '200px'
+    }, 300);
+
+$('#delete1').click(function() {
+        $('.linkdetails[data-link=second]').hide();
+});
+$('#delete2').click(function() { 
+        $('.linkdetails[data-link=first]').hide();
+});
+$('#delete3').click(function() { 
+        $('.linkdetails[data-link=fourth]').hide();
+});
+$('#delete4').click(function() { 
+        $('.linkdetails[data-link=third]').hide();
+});
+
+$('.link').click(function() {
+    $('.linkdetails[data-link=' + $(this).data('link') + ']').fadeIn({
+        width: '200px'
+    }, 300);
+});
+
 //-----------------------------blur-------------------------
         $(window).scroll(function() {
     // Get scroll position
@@ -131,38 +218,39 @@
     opacityVal = (s / ($(window).height()/10));
     // opacity value 0% to 100%
     $('#blur').css('opacity', opacityVal);
-});
-//-----------------------------arrow opacity --------------------------
-         $(window).scroll(function() {
-    // Get scroll position
-    var s = $(window).scrollTop(),
-    // scroll value and opacity
-    opacityVal2 = (70 * 1/((s/1)+1));
+    //arrow opacity
+        opacityVal2 = (70 * 1/((s/1)+1));
     // opacity value 0% to 100%
     $('#arrow').css('opacity', opacityVal2);
 });
 
 //---------------------------- fade out load screen --------------------------
+    var val1 = $(window).height();
+    var val4 = val1-(150);
 
     $(window).on("load", function() {
     $("#loading").fadeOut(500);
+    $('#content').css('height', val4);
 });
 //--------------------------- sticky nav -----------------------------
-         var  mn = $(".nav");
-    ns = "nav-scrolled";
+    var 
+    nv = $(".nav"); 
+    md = $("#content");
     wh = $(window).height();
+    am = wh*.17;
 
 $(window).scroll(function() {
-  if( $(this).scrollTop() > 900 ) {
-    mn.addClass(ns);
+  if( $(this).scrollTop() > (wh+68) ) {
+    nv.css("position", "fixed");
+    md.css("padding-top", "96px");
   } else {
-    mn.removeClass(ns);
+    md.css("padding-top", "0");
+    nv.css("position", "relative");
   }
 });
 
-
 //--------------------------------- fade out pics --------------------------------------
-sr.reveal('.shot', {viewFaactor: 0.5});
+sr.reveal('.shot', {viewFaactor: 0.5}, {reset: false});
 
 //---------------------------------- click to enlarge ------------------------------------
 
