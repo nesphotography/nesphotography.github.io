@@ -10,6 +10,23 @@
 		.scroll {
 			top: -250px;
 		}
+		a {
+			text-decoration: none;
+		  	/* First we need to help some browsers along for this to work.
+		     Just because a vendor prefix is there, doesn't mean it will
+		     work in a browser made by that vendor either, it's just for
+		     future-proofing purposes I guess. */
+		 	 -o-transition:color .2s ease-out, background 2s ease-in;
+		 	 -ms-transition:color .2s ease-out, background 2s ease-in;
+		 	 -moz-transition:color .2s ease-out, background 2s ease-in;
+		 	 -webkit-transition:color .2s ease-out, background 2s ease-in;
+		  	/* ...and now for the proper property */
+		  	transition:color .2s ease-out, background 2s ease-in;
+		}
+		:root {
+			--main-color: rgba(205,200,0,1);
+			--place-holder: rgba(70,120,170,1);
+		}
 		#header {
 			/*background-image: url('img/Sunset1.JPG');*/
 			background-image: url('img/Sunset1.JPG');
@@ -84,6 +101,7 @@
 			padding: 7px 20px;
 			background-color: rgba(150,150,150,0.5);
 		}
+
 		#button2 {
 			border-style: solid; 
 			border-width: 1px; 
@@ -108,13 +126,17 @@
 			top: 0;
             height: 75px;
             width: 100%;
-            background-color: rgba(60, 60, 60, 1);
+            background-color: rgba(65, 65, 65, 1);
             position: relative;
             z-index: 15;
             text-align: center;
             color: black;
             padding-top: 20px;
-		}		
+            box-shadow: ;
+		}	
+		a.nav-active {
+   			 color:#ccc;
+		}	
 		#navigation {
             list-style: none;
             padding: 0.1%;
@@ -126,18 +148,91 @@
             }
         #navigation li {
             display: inline;
-            margin:5%;
+            margin:0% 6.5% 0% 3%;
             }
         #navigation a {
             color: inherit;
             text-decoration: inherit;
             }
         #navigation a:hover {
-            color: rgba(110,110,110,1); 
+            color: var(--main-color); 
             }
-        #content {
-        	height: 10%;
-        	background-color: rgba(60, 60, 60, 1);
+        #first {
+        	height: 550px;
+        	background-color: rgba(75, 75, 75, 1);
+        	border-style: solid;
+        	border-width: 1px 0px 0px 0px;
+        	border-top-color: #111111;*/
+        }
+        #second {
+        	height: 550px;
+        	background-color: rgba(75, 75, 75, 1);
+        	border-style: solid;
+        	border-width: 1px 0px 0px 0px;
+        	border-top-color: #111111;*/
+        }
+        .aboutDiv {
+        	text-align: left;
+        	width: 26%;
+        	float: left;
+        	height: 300px;
+        	line-height: 200%;
+        	font-size: 1em;
+        	padding: 4% 2% 8% 2%;
+        }
+        .aboutDiv h1 {
+        	font-size: 3em;
+        	color: var(--main-color);  
+        }
+        .aboutIMG {
+        	width: 200px;
+        	height: auto;
+        	text-align: center;
+        }
+        .connectDiv {
+        	text-align: left;
+        	width: 26%;
+        	float: left;
+        	height: 100px;
+        	line-height: 200%;
+        	font-size: 1em;
+        	padding: 4% 2% 8% 2%;
+        }
+        .connectDiv h1 {
+        	font-size: 3em;
+        	color: var(--main-color);  
+        }
+        #iconContainer {
+        	width: 90%;
+        	height: 100px;
+        	text-align: center;
+        	margin: auto;
+        	font-family:inherit;
+            font-weight: normal;
+        }
+        .ICSubContainer {
+        	width: 220px;
+        	height: 200px;
+        	text-align: center;
+        	float: auto;
+        	display: inline-block;
+        	margin: 1%;
+        	color: black;
+        	-o-transition:color .5s ease-out;
+			-ms-transition:color .5s ease-out;
+			-moz-transition:color .5s ease-out;
+			-webkit-transition:color .5s ease-out;
+			  /* ...and now for the proper property */
+			transition:color .5s ease-out;
+        }
+        .ICSubContainer a:hover {
+		 	color: var(--main-color); 
+        }
+      
+        .icon {
+        	width: 80px;
+        	height: auto;
+        	text-align: center;
         }
         #portfolio {
 			height: 10px;

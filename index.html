@@ -23,29 +23,29 @@
 	<div id="header"></div>
 	<div id ="blur"></div>
 	<div id = "enter">
-		<a href="#firstScroll" id = "button1" class="link">NES PHOTOGRAPHY</a>
+		<a href="#portfolio" id = "button1" class="link">NES PHOTOGRAPHY</a>
 	</div>
 	<div id = "arrow">
-		<a href="#firstScroll" class="link">
+		<a href="#portfolio" class="link">
 			<img src="img/down-arrow-dark.png" id= "button2" style="width: 20px; height: auto;">
 		</a>
 	</div>
-    <div id ="firstScroll" style="text-align: center; background-color: rgba(60, 60, 60, 1); top:100%;">
+    <div id ="firstScroll" style="text-align: center; background-color: rgba(65, 65, 65, 1); top:100%;">
         <div style="padding: 40 10 10 10;">
-            <a href="#firstScroll" id = "button3" class="link">NES PHOTOGRAPHY</a>
+            <a id = "button3">NES PHOTOGRAPHY</a>
         </div>
     </div>
     <div class="nav">
         <hr style="width:60%; color:black;">
         <ul id="navigation">
             <li>
-                <a href="#firstScroll"  id="delete1" class="link" data-link="first" id="space">About</a>
+                <a href="#portfolio" id="delete3" class="link" id="space" data-link="third" class="tab3">Photography</a>
             </li>
             <li>
-                <a href="#firstScroll"  id="delete2" class="link" data-link="second" id="space">Contact</a>
+                <a href="#firstScroll"  id="delete1" class="link" data-link="first" id="space" class="tab1">About</a>
             </li>
             <li>
-                <a href="#portfolio" id="delete3" class="link" id="space" data-link="third">Photography</a>
+                <a href="#firstScroll"  id="delete2" class="link" data-link="second" id="space" class="tab2">Connect</a>
             </li>
             <!--<li>
                 <a href="#portfolio2" id="delete4" class="link" id="space" data-link="fourth">Videography</a>
@@ -55,16 +55,54 @@
     </div>
     <div id = "contentScroll" style="height: 100px; margin-top: -100px;">
     </div>
-    <div id="content">
-            <div class="linkdetails" data-link="first" >
-                <!-- <div id ="firstScroll" style="text-align: center; background-color: rgba(60, 60, 60, 1);">
-                    <div style="padding: 40 10 10 10;">
-                        <a href="#firstScroll" id = "button3" class="link">NES PHOTOGRAPHY</a>
-                    </div>
-                </div> -->
-                content 1 placeholder 
+    <div class="linkdetails" data-link="first" id="first">
+        <div>
+            <div class = "aboutDiv" style="text-align: right; padding-left: 20%">
+                <h1>About</h1>
+                <img src="img/nina.jpg" class="aboutIMG">
             </div>
-            <div class="linkdetails" data-link="second" >content 2 placeholder</div>
+            <div class = "aboutDiv" style="padding-right: 20%; margin-top: .5%;">
+                <p style="font-weight: normal;">I'm a free-lance photographer based out of North Georgia focusing on traditional portrait work.
+                    <br><br>I'm a student at <a href="http://hss.kennesaw.edu/" target="_blank" style="color: var(--main-color);">Kennesaw's College of Humanities and Social Sciences,</a> studying <a href="http://socm.hss.kennesaw.edu/programs/bsc/" target="_blank" style="color: var(--main-color);">Communications,</a> with a concentration in Media Studies, and a minor in <a href="http://english.hss.kennesaw.edu/programs/minor-fs/" target="_blank" style="color: var(--main-color);">Film.</a>
+                    <br><br>Feel free to contact me with any questions.</p>
+            </div>
+        </div>
+    </div>
+    <div class="linkdetails" data-link="second" id="second">
+        <div>
+            <div class = "connectDiv" style="text-align: right; padding-left: 20%">
+                <h1>Connect</h1>
+            </div>
+            <div class = "connectDiv" style="padding-right: 20%; margin-top: .5%;">
+                <p style="font-weight: normal;"><i>Get in touch:</i> Follow me on <a href="https://www.instagram.com/ninaexenetakesphotos/" target="_blank" style="color: var(--main-color);">Instagram,</a> follow me on <a href="https://www.flickr.com/ninaexenetakesphotos/" target="_blank" style="color: var(--main-color);"">Flickr,</a> and contact me with any <a href="mailto:photosbynes@gmail.com" style="color: var(--main-color);">questions or session inquiries.</a></p>
+            </div>
+        </div>
+        <div id = "iconContainer">
+            <div class = "ICSubContainer">
+                <a href="https://www.instagram.com/ninaexenetakesphotos/" target="_blank">
+                    <img class = "icon" src = "img/icons/instagram.png">
+                    <p>INSTAGRAM</p>
+                    <p>Follow me</p>
+                    <hr style="width: 60px; border-color: rgba(150,140,0,1);">
+                </a>
+            </div>
+            <div class = "ICSubContainer">
+                <a href="https://www.flickr.com/ninaexenetakesphotos/" target="_blank">
+                    <img class = "icon" src = "img/icons/flickr.png">
+                    <p>FLICKR</p>
+                    <p>Follow me</p>
+                    <hr style="width: 60px; border-color: rgba(150,140,0,1);">
+                </a>
+            </div>
+            <div class = "ICSubContainer">
+                <a href="mailto:photosbynes@gmail.com">
+                    <img class = "icon" src = "img/icons/email1.png">
+                    <p>EMAIL</p>
+                    <p>photosbynes@gmail.com</p>
+                    <hr style="width: 140px; border-color: rgba(150,140,0,1);">
+                </a>
+            </div>
+        </div>
     </div>
 	<div id = "portfolio"  class="linkdetails" data-link="third">
         <div id="wrap" class="pics">
@@ -188,41 +226,48 @@
 
 $('.linkdetails').hide();
 $('.linkdetails[data-link=first]').fadeIn({
-        width: '200px'
     }, 300);
-
+$('.linkdetails[data-link=third]').fadeIn({
+    }, 300);
+var current = "a";
 $('#delete1').click(function() {
         $('.linkdetails[data-link=second]').hide();
+        current == "a";
+        $("#content").css('height', '600px;');
 });
 $('#delete2').click(function() { 
         $('.linkdetails[data-link=first]').hide();
+        current == "b";
+        $("#content").css('height', '300px;');
 });
-$('#delete3').click(function() { 
+/*$('#delete3').click(function() { 
         $('.linkdetails[data-link=fourth]').hide();
 });
 $('#delete4').click(function() { 
         $('.linkdetails[data-link=third]').hide();
-});
+});*/
 
 $('.link').click(function() {
     $('.linkdetails[data-link=' + $(this).data('link') + ']').fadeIn({
-        width: '200px'
     }, 300);
 });
 
-//-----------------------------blur-------------------------
-        $(window).scroll(function() {
-    // Get scroll position
-    var s = $(window).scrollTop(),
-    // scroll value and opacity
-    opacityVal = (s / ($(window).height()/10));
-    // opacity value 0% to 100%
-    $('#blur').css('opacity', opacityVal);
-    //arrow opacity
-        opacityVal2 = (70 * 1/((s/1)+1));
-    // opacity value 0% to 100%
-    $('#arrow').css('opacity', opacityVal2);
+//------------------- navbar highlight current -----------------
+   var wh = $(window).height();
+   var t1 = $(".tab1");
+   var t2 = $('.tab2');
+   var t3 = $('.tab3');
+
+ $(window).scroll(function() {
+  if( $(this).scrollTop() > wh ) {
+    t3.css("color", "var(--main-color)");
+  } else if (current == 'a') {
+    t1.css("color", "var(--main-color)");
+  } else {
+    t2.css("color", "var(--main-color)");
+  }
 });
+
 
 //---------------------------- fade out load screen --------------------------
     var val1 = $(window).height();
@@ -230,21 +275,26 @@ $('.link').click(function() {
 
     $(window).on("load", function() {
     $("#loading").fadeOut(500);
-    $('#content').css('height', val4);
+    //$('#content').css('height', val4);
 });
 //--------------------------- sticky nav -----------------------------
     var 
     nv = $(".nav"); 
-    md = $("#content");
+    fd = $("#first");
+    sd = $('#second');
     wh = $(window).height();
     am = wh*.17;
 
 $(window).scroll(function() {
   if( $(this).scrollTop() > (wh+68) ) {
     nv.css("position", "fixed");
-    md.css("padding-top", "96px");
+    nv.css("box-shadow", "0px 4px 5px -2px #000000");
+    fd.css("padding-top", "96px");
+    sd.css("padding-top", "96px");
   } else {
-    md.css("padding-top", "0");
+    fd.css("padding-top", "0");
+    sd.css("padding-top", "0");
+    nv.css("box-shadow", "0px 0px 0px 0px #000000");
     nv.css("position", "relative");
   }
 });
