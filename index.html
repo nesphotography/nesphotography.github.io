@@ -63,7 +63,7 @@
                     <img src="img/nina.jpg" class="aboutIMG">
                 </div>
                 <div class = "aboutDiv" style="padding-right: 20%; margin-top: .5%;">
-                    <p style="font-weight: normal;">I'm a free-lance photographer based out of North Georgia focusing on traditional portrait work.
+                    <p style="font-weight: normal;">I'm a free-lance photographer in North Georgia focusing on traditional and contemporary portrait work.
                         <br><br>I'm a student at <a href="http://hss.kennesaw.edu/" target="_blank" style="color: var(--main-color);">Kennesaw's College of Humanities and Social Sciences,</a> studying <a href="http://socm.hss.kennesaw.edu/programs/bsc/" target="_blank" style="color: var(--main-color);">Communications,</a> with a concentration in Media Studies, and a minor in <a href="http://english.hss.kennesaw.edu/programs/minor-fs/" target="_blank" style="color: var(--main-color);">Film.</a>
                         <br><br>Feel free to contact me with any questions.</p>
                 </div>
@@ -282,8 +282,7 @@ $('.link').click(function() {
 //--------------------------- sticky nav -----------------------------
     var 
     nv = $(".nav"); 
-    fd = $("#first");
-    sd = $('#second');
+    bgc = $("#backgroundContent");
     wh = $(window).height();
     am = wh*.17;
 
@@ -291,11 +290,9 @@ $(window).scroll(function() {
   if( $(this).scrollTop() > (wh+68) ) {
     nv.css("position", "fixed");
     nv.css("box-shadow", "0px 4px 5px -2px #000000");
-    fd.css("padding-top", "96px");
-    sd.css("padding-top", "96px");
+    bgc.css("padding-top", "96px");
   } else {
-    fd.css("padding-top", "0");
-    sd.css("padding-top", "0");
+    bgc.css("padding-top", "0");
     nv.css("box-shadow", "0px 0px 0px 0px #000000");
     nv.css("position", "relative");
   }
