@@ -208,7 +208,7 @@
         </div>
     </div>-->
     <div id = "footer">
-        <p style="vertical-align: middle;">&copy; 2016 NES Photography | <i>All rights reserved</i></p>
+        <p>&copy; 2016 NES Photography | <i>All rights reserved</i></p>
     </div>
 </div>
     <script src="dist/js/lightbox.js"></script>
@@ -299,7 +299,7 @@ $('.link').click(function() {
     wh = $(window).height();
     am = wh*.17;
 
-$(window).on("load resize scroll",function(e) {
+$(window).on("load resize scroll orientationchange",function(e) {
     if ( isMobile == true || $(window).width() < 950){
       /*nv.css({
             "position" : "fixed",
