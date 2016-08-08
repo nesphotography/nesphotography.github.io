@@ -2,7 +2,7 @@
 			background-color: rgb(40,40,40);
 			margin: 0;
 			font-family: "proxima-nova", sans-serif;
-			font-weight: bold;
+			font-weight: normal;
 			letter-spacing: 1px;
 		}
 		html, body {
@@ -11,6 +11,8 @@
 		.scroll {
 			top: -250px;
 		}
+
+
 		a {
 			text-decoration: none;
 		  	/* First we need to help some browsers along for this to work.
@@ -24,6 +26,8 @@
 		  	/* ...and now for the proper property */
 		  	transition:color .2s ease-out, background 2s ease-in;
 		}
+
+
 		:root {
 			--main-color: rgba(205,200,0,1);
 			--place-holder: rgba(70,120,170,1);
@@ -95,7 +99,7 @@
 			width: 100%;
 			text-align: center;
 		}
-		#button1 {
+		#button1, #button2, #button3 {
 			border-style: solid; 
 			border-width: 1px; 
 			border-radius: 2px; 
@@ -104,25 +108,19 @@
 		}
 
 		#button2 {
-			border-style: solid; 
-			border-width: 1px; 
 			border-radius: 200px; 
 			padding: 17px 13px;
-			background-color: rgba(150,150,150,0.5);
-		}
-		#button3 {
-			border-style: solid; 
-			border-width: 1px; 
-			border-radius: 2px; 
-			padding: 7px 20px;
-			background-color: rgba(150,150,150,0.3);
-			font-weight: normal;
 		}
 		hr {
 		    height: 1px;
 		    border: 0;
 		    border-top: 1px solid rgb(0,0,0);
 		}
+
+		#firstScrollDiv {
+			padding: 40 10 10 10;
+		}
+
 		.nav {
 			top: 0;
             height: 75px;
@@ -135,9 +133,12 @@
             padding-top: 20px;
             box-shadow: ;
 		}	
-		a.nav-active {
-   			 color:#ccc;
-		}	
+		#hr1 {
+			width: 60%;
+		}
+		#hr2 {
+			width: 50%;
+		}
 		#navigation {
             list-style: none;
             padding: 0.1%;
@@ -158,30 +159,26 @@
         #navigation a:hover {
             color: var(--main-color); 
             }
-        #first {
-        	height: 60%;
-        	min-height: 550px;
-        	background-color: rgba(75, 75, 75, 1);
-        }
-        #second {
+        #first, #second, #backgroundContent {
         	height: 60%;
         	min-height: 550px;
         	background-color: rgba(75, 75, 75, 1);
         }
         #backgroundContent {
-        	height: 60%;
-        	min-height: 550px;
-        	background-color: rgba(75, 75, 75, 1);
         	border-style: solid;
         	border-width: 1px 0px 0px 0px;
         	border-top-color: #111111;	
         }
+        #aDiv1 {
+        	text-align: right;
+        	padding-left: 20%
+        }
+        #aDiv2 {
+        	padding-right: 20%;
+        	margin-top: .5%;
+        }
         .aboutDiv {
-        	text-align: left;
-        	width: 28%;
-        	float: left;
         	height: 300px;
-        	line-height: 200%;
         	font-size: 1.1em;
         	padding: 4% 2% 8% 2%;
         }
@@ -198,14 +195,26 @@
         	height: auto;
         	text-align: center;
         }
-        .connectDiv {
+        .aboutDiv, .connectDiv {
         	text-align: left;
         	width: 28%;
         	float: left;
-        	height: 15%;
-        	min-height: 125px;
         	line-height: 200%;
         	font-size: 1.1em;
+        }
+        #cDiv1 {
+            text-align: right;
+            padding-left: 20%
+        }
+        #cDiv2 {
+            padding-right: 20%; 
+            margin-top: .5%; 
+            letter-spacing: 1.5px;
+        }
+        .connectDiv {
+        	
+        	height: 15%;
+        	min-height: 125px;
         	padding: 4% 2% 0% 2%;
         }
         .spacer {
@@ -261,13 +270,6 @@
 			margin-top: -95px;
 			position: relative;
 		}
-		#portfolio2 {
-			height: auto;
-			margin: .5%;
-			padding-top: 100px;
-			margin-top: -95px;
-			position: relative;
-		}
 		#wrap {
 		    width:100%;
 		}
@@ -313,3 +315,19 @@
 			position: relative;
 
 		}
+
+
+/*
+ * ---------------------------------------------------------------------------------------------------
+ *                                             Mobile Code
+ *                                                Below
+ * ---------------------------------------------------------------------------------------------------
+ */
+
+
+ @media screen and (max-width: 1020px) {
+  
+}
+
+
+
