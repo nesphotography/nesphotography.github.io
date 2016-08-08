@@ -3,6 +3,7 @@
 			margin: 0;
 			font-family: "proxima-nova", sans-serif;
 			font-weight: bold;
+			letter-spacing: 1px;
 		}
 		html, body {
    			height: 100%;
@@ -158,15 +159,18 @@
             color: var(--main-color); 
             }
         #first {
-        	height: 550px;
+        	height: 60%;
+        	min-height: 550px;
         	background-color: rgba(75, 75, 75, 1);
         }
         #second {
-        	height: 550px;
+        	height: 60%;
+        	min-height: 550px;
         	background-color: rgba(75, 75, 75, 1);
         }
         #backgroundContent {
-        	height: 550px;
+        	height: 60%;
+        	min-height: 550px;
         	background-color: rgba(75, 75, 75, 1);
         	border-style: solid;
         	border-width: 1px 0px 0px 0px;
@@ -178,12 +182,15 @@
         	float: left;
         	height: 300px;
         	line-height: 200%;
-        	font-size: 1em;
+        	font-size: 1.1em;
         	padding: 4% 2% 8% 2%;
         }
         .aboutDiv h1 {
         	font-size: 3em;
         	color: var(--main-color);  
+        }
+        .aboutDiv p {
+        	max-width: 450px;
         }
         .aboutIMG {
         	width: 200px;
@@ -196,12 +203,15 @@
         	float: left;
         	height: 100px;
         	line-height: 200%;
-        	font-size: 1em;
-        	padding: 4% 2% 8% 2%;
+        	font-size: 1.1em;
+        	padding: 4% 2% 7% 2%;
         }
         .connectDiv h1 {
         	font-size: 3em;
         	color: var(--main-color);  
+        }
+        .connectDiv p {
+        	max-width: 450px;
         }
         #iconContainer {
         	width: 90%;
@@ -284,6 +294,7 @@
 			margin: 0%;
 		}
 		#footer p {
+			letter-spacing: 3px;
 			color: rgba(150,150,150,1);
 			font-weight: normal;
 			display: table-cell; 
