@@ -178,7 +178,7 @@
         }
         .aboutDiv {
         	text-align: left;
-        	width: 26%;
+        	width: 28%;
         	float: left;
         	height: 300px;
         	line-height: 200%;
@@ -187,7 +187,8 @@
         }
         .aboutDiv h1 {
         	font-size: 3em;
-        	color: var(--main-color);  
+        	color: var(--main-color); 
+        	letter-spacing: 0; 
         }
         .aboutDiv p {
         	max-width: 450px;
@@ -199,7 +200,7 @@
         }
         .connectDiv {
         	text-align: left;
-        	width: 26%;
+        	width: 28%;
         	float: left;
         	height: 100px;
         	line-height: 200%;
@@ -209,6 +210,7 @@
         .connectDiv h1 {
         	font-size: 3em;
         	color: var(--main-color);  
+        	letter-spacing: 0; 
         }
         .connectDiv p {
         	max-width: 450px;
