@@ -212,6 +212,10 @@
         	line-height: 200%;
         	font-size: 1.1em;
         }
+        .aboutDiv a, .connectDiv a {
+        	border-bottom: 1px dashed var(--main-color);
+        	padding-bottom: 5px;
+        }
         #cDiv1 {
             text-align: right;
             padding-left: 20%
