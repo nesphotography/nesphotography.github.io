@@ -320,17 +320,17 @@ $(window).on("load resize scroll orientationchange",function(e) {
         if ( wh*0.1 <= 100){
             nv.css("height", "100");
             nv.css("font-size", "35px");
-            $("#navigation").css("margin", "0");
-            $("#hr1").css("margin", "15px 0 10px 0");
-            $("#hr2").css("margin", "15px 0 10px 0");
-            $("#footer p").css("height", "210px")
+            $("#hr1").css("margin", "15px 0 0 0");
+            $("#hr2").css("margin", "0 0 10px 0");
+            $("#footer p").css("height", "210px");
+            $("#navigation").css("padding", "12px 0 12px 0");
         }
         else {
             nv.css("font-size", "45px");
-            $("#navigation").css("margin", "3% auto 4% auto");
-            $("#hr1").css("margin", "21px 0");
-            $("#hr2").css("margin", "21px 0");
-            $("#footer p").css("height", "280px")
+            $("#hr1").css("margin", "21px 0 0 0");
+            $("#hr2").css("margin", "0 0 21px 0");
+            $("#footer p").css("height", "280px");
+            $("#navigation").css("padding", "35px 0 35px 0");
         }
 
     } else {

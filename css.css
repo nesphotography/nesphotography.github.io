@@ -122,7 +122,7 @@
 
 		#firstScrollDiv {
 			padding: 40 10 10 10;
-			background-image: url("img/noise.png");
+			background-image: url("img/noise1.png");
             background-repeat: repeat;
 		}
 
@@ -137,7 +137,7 @@
             color: black;
             padding-top: 20px;
             box-shadow: ;
-            background-image: url("img/noise.png");
+            background-image: url("img/noise1.png");
             background-repeat: repeat;
 		}	
 		#hr1 {
