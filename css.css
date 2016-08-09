@@ -4,6 +4,8 @@
 			font-family: "proxima-nova", sans-serif;
 			font-weight: normal;
 			letter-spacing: 1px;
+			background-image: url("img/noise1.png");
+            background-repeat: repeat;
 		}
 		html, body {
    			height: 100%;
@@ -31,6 +33,7 @@
 		:root {
 			--main-color: rgba(205,200,0,1);
 			--place-holder: rgba(70,120,170,1);
+			--tile-image: img/noise.png
 		}
 		#header {
 			/*background-image: url('img/Sunset1.JPG');*/
@@ -119,6 +122,8 @@
 
 		#firstScrollDiv {
 			padding: 40 10 10 10;
+			background-image: url("img/noise.png");
+            background-repeat: repeat;
 		}
 
 		.nav {
@@ -132,6 +137,8 @@
             color: black;
             padding-top: 20px;
             box-shadow: ;
+            background-image: url("img/noise.png");
+            background-repeat: repeat;
 		}	
 		#hr1 {
 			width: 60%;
@@ -163,11 +170,14 @@
         	height: 60%;
         	min-height: 550px;
         	background-color: rgba(75, 75, 75, 1);
+        	background-image: url("img/noise.png");
+            background-repeat: repeat;
         }
         #backgroundContent {
         	border-style: solid;
         	border-width: 1px 0px 0px 0px;
         	border-top-color: #111111;	
+
         }
         #aDiv1 {
         	text-align: right;
@@ -257,12 +267,23 @@
         .ICSubContainer a:hover {
 		 	color: var(--main-color); 
         }
-      
         .icon {
         	width: 80px;
         	height: auto;
         	text-align: center;
         }
+        #hr3 {
+      		width: 60px;
+      		border-color: rgba(150,140,0,1);
+      	}
+      	#hr4 {
+      		width: 60px;
+      		border-color: rgba(150,140,0,1);
+      	}
+      	#hr5 {
+      		width: 140px;
+      		border-color: rgba(150,140,0,1);
+      	}
         #portfolio {
 			height: 10px;
 			margin: .5%;
@@ -272,6 +293,7 @@
 		}
 		#wrap {
 		    width:100%;
+
 		}
 		#wrap img {
 		    height:auto;
@@ -303,6 +325,7 @@
 			bottom: 0;
 			padding: 0% 6%;
 			margin: 0%;
+
 		}
 		#footer p {
 			letter-spacing: 3px;

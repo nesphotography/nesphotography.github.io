@@ -75,12 +75,12 @@
         }
         .connectDiv {
             
-            height: 15%;
+            height: 500px;
             min-height: 125px;
             padding: 4% 2% 0% 2%;
         }
         .spacer {
-            height: 600px;
+            height: 300px;
             width: 100%;
             float: left;
         }
@@ -137,7 +137,18 @@
             height: auto;
             text-align: center;
         }
-
+        #hr3 {
+            width: 140px;
+            border-color: rgba(150,140,0,1);
+        }
+        #hr4 {
+            width: 80px;
+            border-color: rgba(150,140,0,1);
+        }
+        #hr5 {
+            width: 80px;
+            border-color: rgba(150,140,0,1);
+        }
         #portfolio {
             padding-top: 5px;
             margin-top: 0;
