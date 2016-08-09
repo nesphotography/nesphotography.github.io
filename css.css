@@ -4,8 +4,8 @@
 			font-family: "proxima-nova", sans-serif;
 			font-weight: normal;
 			letter-spacing: 1px;
-			background-image: url("img/noise1.png");
-            background-repeat: repeat;
+			/*background-image: url("img/noise1.png");
+            background-repeat: repeat;*/
 		}
 		html, body {
    			height: 100%;
@@ -215,6 +215,9 @@
         .aboutDiv a, .connectDiv a {
         	border-bottom: 1px dashed var(--main-color);
         	padding-bottom: 5px;
+        }
+        .aboutDiv a:hover, .connectDiv a:hover {
+        	color: var(--main-color);
         }
         #cDiv1 {
             text-align: right;
