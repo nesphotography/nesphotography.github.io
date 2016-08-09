@@ -79,6 +79,10 @@
             line-height: 170%;
             font-size: 2.4em;
         }
+        .aboutDiv a, .connectDiv a {
+            border-bottom: 2px dashed var(--main-color);
+            padding-bottom: 5px;
+        }
         .connectDiv {
             
             height: 500px;
