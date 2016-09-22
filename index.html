@@ -208,7 +208,12 @@
         </div>
     </div>-->
     <div id = "footer">
-        <p>&copy; 2016 NES Photography | <i>All rights reserved</i></p>
+        <div style="width: 76%; float: left;">
+            <p>&copy; 2016 NES Photography | <i>All rights reserved</i></p>
+        </div>
+        <div style="width: 24%; float: left; padding: 0; text-align: right;">
+            <p style="width: 100%;">Website by: <a href="http://www.jmhs.xyz/" target="_blank">Jmhs</a></p>
+        </div>
     </div>
 </div>
     <script src="dist/js/lightbox.js"></script>
@@ -267,6 +272,20 @@ $('.link').click(function() {
     }, 300);
 });
 
+//-----------------------------blur-------------------------
+        $(window).scroll(function() {
+    // Get scroll position
+    var s = $(window).scrollTop(),
+    // scroll value and opacity
+    opacityVal = ((s*0.2) / ($(window).height()/10));
+    // opacity value 0% to 100%
+    $('#blur').css('opacity', opacityVal);
+    //arrow opacity
+//        opacityVal2 = (70 * 1/((s/1)+1));
+    // opacity value 0% to 100%
+//   $('#arrow').css('opacity', opacityVal2);
+
+});
 //------------------- navbar highlight current -----------------
    var wh = $(window).height();
    var t1 = $(".tab1");

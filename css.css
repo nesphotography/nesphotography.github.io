@@ -31,19 +31,19 @@
 
 
 		:root {
-			--main-color: rgba(205,200,0,1);
+			--main-color: rgba(255,220,0,1);
 			--place-holder: rgba(70,120,170,1);
 			--tile-image: img/noise.png
 		}
 		#header {
 			/*background-image: url('img/Sunset1.JPG');*/
-			background-image: url('img/Sunset1.JPG');
+			background-image: url('img/Sunset1.jpg');
 			background-size: cover;
 			background-position: center;
 			height: 100%;
 			color: #ffffff;
 		}
-		video#bgvid { 
+		video#bgvid {
 		    position: absolute;
 		    top: 50%;
 		    left: 50%;
@@ -57,7 +57,7 @@
 		    -webkit-transform: translateX(-50%) translateY(-50%);
 		    transform: translateX(-50%) translateY(-50%);
 		    background: url('img/Sunset1.JPG') no-repeat;
-		    background-size: cover; 
+		    background-size: cover;
 		    background-position: center;
 		}
 		#blur {
@@ -103,15 +103,15 @@
 			text-align: center;
 		}
 		#button1, #button2, #button3 {
-			border-style: solid; 
-			border-width: 1px; 
-			border-radius: 2px; 
+			border-style: solid;
+			border-width: 1px;
+			border-radius: 2px;
 			padding: 7px 20px;
 			background-color: rgba(150,150,150,0.5);
 		}
 
 		#button2 {
-			border-radius: 200px; 
+			border-radius: 200px;
 			padding: 17px 13px;
 		}
 		hr {
@@ -139,7 +139,7 @@
             box-shadow: ;
             background-image: url("img/noise1.png");
             background-repeat: repeat;
-		}	
+		}
 		#hr1 {
 			width: 60%;
 		}
@@ -164,7 +164,7 @@
             text-decoration: inherit;
             }
         #navigation a:hover {
-            color: var(--main-color); 
+            color: var(--main-color);
             }
         #first, #second, #backgroundContent {
         	height: 60%;
@@ -176,7 +176,7 @@
         #backgroundContent {
         	border-style: solid;
         	border-width: 1px 0px 0px 0px;
-        	border-top-color: #111111;	
+        	border-top-color: #111111;
 
         }
         #aDiv1 {
@@ -194,8 +194,8 @@
         }
         .aboutDiv h1 {
         	font-size: 3em;
-        	color: var(--main-color); 
-        	letter-spacing: 0; 
+        	color: var(--main-color);
+        	letter-spacing: 0;
         }
         .aboutDiv p {
         	max-width: 450px;
@@ -224,12 +224,12 @@
             padding-left: 20%
         }
         #cDiv2 {
-            padding-right: 20%; 
-            margin-top: .5%; 
+            padding-right: 20%;
+            margin-top: .5%;
             letter-spacing: 1.5px;
         }
         .connectDiv {
-        	
+
         	height: 15%;
         	min-height: 125px;
         	padding: 4% 2% 0% 2%;
@@ -242,8 +242,8 @@
         }
         .connectDiv h1 {
         	font-size: 3em;
-        	color: var(--main-color);  
-        	letter-spacing: 0; 
+        	color: var(--main-color);
+        	letter-spacing: 0;
         }
         .connectDiv p {
         	max-width: 450px;
@@ -272,7 +272,7 @@
 			transition:color .5s ease-out;
         }
         .ICSubContainer a:hover {
-		 	color: var(--main-color); 
+		 	color: var(--main-color);
         }
         .icon {
         	width: 80px;
@@ -336,12 +336,16 @@
 		}
 		#footer p {
 			letter-spacing: 3px;
-			color: rgba(150,150,150,1);
+			color: rgb(150,150,150);
 			font-weight: normal;
-			display: table-cell; 
-			height: 60px; 
-			padding: 0 20px; 
+			/*display: table-cell; */
+			height: 60px;
+			padding: 0 0 0 20px;
 			vertical-align: middle;
 			position: relative;
+		}
 
+		#footer a {
+			color: rgb(150,150,150);
+			border-bottom: 1px dashed var(--main-color);
 		}
