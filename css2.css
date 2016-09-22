@@ -1,172 +1,195 @@
+#enter {
+    top: 30%;
+    font-size: 3rem;
+}
 
-        #enter {
-            top: 30%;
-            font-size: 3rem;
-        }
+#arrow {
+    visibility: hidden;
+}
 
-        #arrow {
-            visibility: hidden;
-        }
-        
-        #firstScrollDiv {
-            padding: 40 10 40 10;
-            font-size: 2rem;
-        }
+#firstScrollDiv {
+    padding: 40 10 40 10;
+    font-size: 2rem;
+}
 
-        #hr1 {
-            width: 100%;
-            margin: 21px 0 0 0;
-        }
-        #hr2 {
-            width: 100%;
-            margin: 0 0 21px 0;
-        }
-        .nav {
-            position: fixed;
-            top: auto;
-            bottom: 0;
-            height: 170px;
-            padding: 0;
-            margin: 0;
-            min-height: 100px;
-            font-size: 45px;
-            box-shadow: 0px -0px 40px 0px rgba(45, 45, 45, 1);
-        }
-        #navigation {
-            margin: 0;
-            padding: 35px 0 35px 0;
-            background-color: rgba(150,150,150,0.5);
-        }
-        #navigation li {
-            display: inline;
-            margin:0% 6% 0% 6%;
-        }
-        #first, #second, #backgroundContent {
-            height: 1500px;
-            min-height: 550px;
-            background-color: rgba(75, 75, 75, 1);
-        }
-        #aDiv1 {
-            width: 43%;
-            text-align: right;
-            padding-left: 0%
-        }
-        #aDiv2 {
-            width: 53%;
-            padding-right: 0%;
-            margin-top: .5%;
-        }
-        .aboutDiv {
-            height: 300px;
-            padding: 4% 2% 8% 2%;
-        }
-        .aboutDiv h1 {
-            font-size: 2em;
-            color: var(--main-color); 
-            letter-spacing: 0; 
-        }
-        .aboutDiv p {
-            max-width: 450px;
-        }
-        .aboutIMG {
-            width: 90%;
-            height: auto;
-            text-align: center;
-        }
-        .aboutDiv, .connectDiv {
-            text-align: left;
-            float: left;
-            line-height: 170%;
-            font-size: 2.4em;
-        }
-        .aboutDiv a, .connectDiv a {
-            border-bottom: 2px dashed var(--main-color);
-            padding-bottom: 5px;
-        }
-        .connectDiv {
-            
-            height: 500px;
-            min-height: 125px;
-            padding: 4% 2% 0% 2%;
-        }
-        .spacer {
-            height: 300px;
-            width: 100%;
-            float: left;
-        }
-        #cDiv1 {
-            width: 43%;
-            text-align: right;
-            padding-left: 0%
-        }
-        #cDiv2 {
-            width: 53%;
-            padding-right: 0%; 
-            margin-top: .5%; 
-            letter-spacing: 1.5px;
-        }
-        .connectDiv h1 {
-            font-size: 2em;
-            color: var(--main-color);  
-            letter-spacing: 0; 
-        }
-        .connectDiv p {
-            max-width: 450px;
-        }
-        #iconContainer {
-            width: 100%;
-            height: 30%;
-            text-align: center;
-            margin: auto;
-            font-family:inherit;
-            font-weight: normal;
-            font-size: 2rem;
-        }
-        .ICSubContainer {
-            width: 30%;
-            height: 200px;
-            text-align: center;
-            float: auto;
-            display: inline-block;
-            margin: 1%;
-            color: black;
-            -o-transition:color .5s ease-out;
-            -ms-transition:color .5s ease-out;
-            -moz-transition:color .5s ease-out;
-            -webkit-transition:color .5s ease-out;
-              /* ...and now for the proper property */
-            transition:color .5s ease-out;
-        }
+#hr1 {
+    width: 100%;
+    margin: 21px 0 0 0;
+}
 
-        .ICSubContainer a:hover {
-            color: var(--main-color); 
-        }
-      
-        .icon {
-            width: 175px;
-            height: auto;
-            text-align: center;
-        }
-        #hr3 {
-            width: 140px;
-            border-color: rgba(150,140,0,1);
-        }
-        #hr4 {
-            width: 80px;
-            border-color: rgba(150,140,0,1);
-        }
-        #hr5 {
-            width: 80px;
-            border-color: rgba(150,140,0,1);
-        }
-        #portfolio {
-            padding-top: 5px;
-            margin-top: 0;
-        }
+#hr2 {
+    width: 100%;
+    margin: 0 0 21px 0;
+}
 
-        #footer p {
-            padding-top: 40px;
-            vertical-align: top;
-            height: 280px;
-            font-size: 1.5rem;
-        }
+.nav {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    height: 170px;
+    padding: 0;
+    margin: 0;
+    min-height: 100px;
+    font-size: 45px;
+    box-shadow: 0px -0px 40px 0px rgba(45, 45, 45, 1);
+}
+
+#navigation {
+    margin: 0;
+    padding: 35px 0 35px 0;
+    background-color: rgba(150, 150, 150, 0.5);
+}
+
+#navigation li {
+    display: inline;
+    margin: 0% 6% 0% 6%;
+}
+
+#first, #second, #backgroundContent {
+    height: 1500px;
+    min-height: 550px;
+    background-color: rgba(75, 75, 75, 1);
+}
+
+#aDiv1 {
+    width: 43%;
+    text-align: right;
+    padding-left: 0%
+}
+
+#aDiv2 {
+    width: 53%;
+    padding-right: 0%;
+    margin-top: .5%;
+}
+
+.aboutDiv {
+    height: 300px;
+    padding: 4% 2% 8% 2%;
+}
+
+.aboutDiv h1 {
+    font-size: 2em;
+    color: var(--main-color);
+    letter-spacing: 0;
+}
+
+.aboutDiv p {
+    max-width: 450px;
+}
+
+.aboutIMG {
+    width: 90%;
+    height: auto;
+    text-align: center;
+}
+
+.aboutDiv, .connectDiv {
+    text-align: left;
+    float: left;
+    line-height: 170%;
+    font-size: 2.4em;
+}
+
+.aboutDiv a, .connectDiv a {
+    border-bottom: 2px dashed var(--main-color);
+    padding-bottom: 5px;
+}
+
+.connectDiv {
+    height: 500px;
+    min-height: 125px;
+    padding: 4% 2% 0% 2%;
+}
+
+.spacer {
+    height: 300px;
+    width: 100%;
+    float: left;
+}
+
+#cDiv1 {
+    width: 43%;
+    text-align: right;
+    padding-left: 0%
+}
+
+#cDiv2 {
+    width: 53%;
+    padding-right: 0%;
+    margin-top: .5%;
+    letter-spacing: 1.5px;
+}
+
+.connectDiv h1 {
+    font-size: 2em;
+    color: var(--main-color);
+    letter-spacing: 0;
+}
+
+.connectDiv p {
+    max-width: 450px;
+}
+
+#iconContainer {
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    margin: auto;
+    font-family: inherit;
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+.ICSubContainer {
+    width: 30%;
+    height: 200px;
+    text-align: center;
+    float: auto;
+    display: inline-block;
+    margin: 1%;
+    color: black;
+    -o-transition: color .5s ease-out;
+    -ms-transition: color .5s ease-out;
+    -moz-transition: color .5s ease-out;
+    -webkit-transition: color .5s ease-out;
+    /* ...and now for the proper property */
+    transition: color .5s ease-out;
+}
+
+.ICSubContainer a:hover {
+    color: var(--main-color);
+}
+
+.icon {
+    width: 175px;
+    height: auto;
+    text-align: center;
+}
+
+#hr3 {
+    width: 140px;
+    border-color: rgba(150, 140, 0, 1);
+}
+
+#hr4 {
+    width: 80px;
+    border-color: rgba(150, 140, 0, 1);
+}
+
+#hr5 {
+    width: 80px;
+    border-color: rgba(150, 140, 0, 1);
+}
+
+#portfolio {
+    padding-top: 5px;
+    margin-top: 0;
+}
+
+#footer p {
+    padding-top: 40px;
+    vertical-align: top;
+    height: 280px;
+    font-size: 1.5rem;
+}
