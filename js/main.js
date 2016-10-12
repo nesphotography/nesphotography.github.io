@@ -51,28 +51,29 @@
 					instance.setProgress( progress );
 
 					// reached the end
-					if( progress === 1 ) {
-						classie.remove( container, 'loading' );
-						classie.add( container, 'loaded' );
-						clearInterval( interval );
 
-						var onEndHeaderAnimation = function(ev) {
+					if( progress === 1) {
+							classie.remove( container, 'loading' );
+							classie.add( container, 'loaded' );
+							clearInterval( interval );
+
+							var onEndHeaderAnimation = function(ev) {
+								if( support.animations ) {
+									if( ev.target !== header ) return;
+									this.removeEventListener( animEndEventName, onEndHeaderAnimation );
+								}
+
+								classie.add( document.body, 'layout-switch' );
+								window.removeEventListener( 'scroll', noscroll );
+							};
+
 							if( support.animations ) {
-								if( ev.target !== header ) return;
-								this.removeEventListener( animEndEventName, onEndHeaderAnimation );
+								header.addEventListener( animEndEventName, onEndHeaderAnimation );
 							}
-
-							classie.add( document.body, 'layout-switch' );
-							window.removeEventListener( 'scroll', noscroll );
-						};
-
-						if( support.animations ) {
-							header.addEventListener( animEndEventName, onEndHeaderAnimation );
+							else {
+								onEndHeaderAnimation();
+							}
 						}
-						else {
-							onEndHeaderAnimation();
-						}
-					}
 				}, 80 );
 		};
 
@@ -84,5 +85,4 @@
 	}
 
 	init();
-
 })();
