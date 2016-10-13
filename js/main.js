@@ -40,12 +40,11 @@
 			onEndInitialAnimation();
 		}
 	}
-
+	var sdegree = 0;
 	function spinDatBoi() {
 		var coord = $('.loading-spinner').getBBox();
 		coord.x + (coord.width/2) +' '+ coord.y + (coord.height/2);
-		var sdegree = 0;
-		for (int x = 0; x < 1000; x++){
+
 			sdegree ++ ;
 			sdegree = sdegree + 2 ;
 			var srotate = "rotate(" + sdegree + "deg)";
@@ -55,7 +54,7 @@
 				"-webkit-transform-origin" : "50% 50%",
 				"transform-origin" : "50% 50%"
 			});
-		}
+
 	}
 
 	function startLoading() {
@@ -65,7 +64,7 @@
 			var progress = 0,
 				interval = setInterval( function() {
 					progress = Math.min( progress + Math.random() * 0.1, 1 );
-
+					spinDatBoi();
 					instance.setProgress( progress );
 
 					// reached the end
