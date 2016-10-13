@@ -2,14 +2,17 @@
     top: 30%;
     font-size: 3rem;
 }
+.ip-loader {
 
+}
 #arrow {
     visibility: hidden;
 }
 
 #firstScrollDiv {
     padding: 40 10 40 10;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    letter-spacing: 5px;
 }
 
 #hr1 {
