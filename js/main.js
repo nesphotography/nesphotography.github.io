@@ -44,6 +44,7 @@
 	function startLoading() {
 		// simulate loading something..
 		var simulationFn = function(instance) {
+			window.scrollTo( 0, 0 );
 			var progress = 0,
 				interval = setInterval( function() {
 					progress = Math.min( progress + Math.random() * 0.1, 1 );
