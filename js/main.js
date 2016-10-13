@@ -41,6 +41,23 @@
 		}
 	}
 
+	function spinDatBoi() {
+		var coord = $('.loading-spinner').getBBox();
+		coord.x + (coord.width/2) +' '+ coord.y + (coord.height/2);
+		var sdegree = 0;
+		for (int x = 0; x < 1000; x++){
+			sdegree ++ ;
+			sdegree = sdegree + 2 ;
+			var srotate = "rotate(" + sdegree + "deg)";
+			$('.loading-spinner').css({
+				"-webkit-transform" : srotate,
+				"transform" : srotate,
+				"-webkit-transform-origin" : "50% 50%",
+				"transform-origin" : "50% 50%"
+			});
+		}
+	}
+
 	function startLoading() {
 		// simulate loading something..
 		var simulationFn = function(instance) {
