@@ -589,11 +589,11 @@
         </div>
     </div>-->
     <div id = "footer">
-        <div style="width: 76%; float: left;">
+        <div style="width: 100%; float: left; padding-top: 20px;">
             <p>&copy; 2016 NES Photography | <i>All rights reserved</i></p>
         </div>
-        <div style="width: 24%; float: left; padding: 0; text-align: right;">
-            <p style="width: 100%;">Website by: <a href="http://www.jmhs.xyz/" target="_blank">Jmhs</a></p>
+        <div style="width: 100%; float: left; padding: 0;">
+            <p id="bottom" style="width: 100%;">Website by: <a href="http://www.jmhs.xyz/" target="_blank">Jmhs</a></p>
         </div>
     </div>
 </div>
@@ -732,14 +732,14 @@ $(window).on("load resize scroll orientationchange",function(e) {
             nv.css("font-size", "35px");
             $("#hr1").css("margin", "15px 0 0 0");
             $("#hr2").css("margin", "0 0 10px 0");
-            $("#footer p").css("height", "210px");
+            $("#bottom").css("height", "145px");
             $("#navigation").css("padding", "12px 0 12px 0");
         }
         else {
             nv.css("font-size", "45px");
             $("#hr1").css("margin", "21px 0 0 0");
             $("#hr2").css("margin", "0 0 21px 0");
-            $("#footer p").css("height", "280px");
+            $("#bottom").css("height", "215px");
             $("#navigation").css("padding", "35px 0 35px 0");
         }
 
